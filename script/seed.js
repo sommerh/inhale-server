@@ -1,14 +1,22 @@
 const { db, Strategy } = require('../db/models');
 
+//TODO: add a "helpful for" section and make it an array of emotions this is helpful for
+
 const strategies = [
   {
     name: 'three-six-nine',
     description: 'calming breath',
     duration: 18,
-    // inhale: 3,
-    // exhale: 9,
-    // pauseOne: 6,
-    // pauseTwo: null,
+  },
+  {
+    name: 'tired',
+    description: 'energizing breath',
+    duration: 10,
+  },
+  {
+    name: 'box',
+    description: 'stress-reduction breath',
+    duration: 20,
   },
 ];
 
