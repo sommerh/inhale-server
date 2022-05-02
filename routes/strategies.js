@@ -7,7 +7,7 @@ router.get('/', async (req, res, next) => {
     const allStrategies = await Strategy.findAll();
     res.send(allStrategies);
   } catch (err) {
-    console.error('Unable to fetch strategies!');
+    console.error('🦞 Unable to fetch strategies!');
     next(err);
   }
 });
@@ -21,9 +21,8 @@ router.get('/:name', async (req, res, next) => {
       },
     });
     res.send(strategy);
-    // res.send({ name: 'three-six-nine' });
   } catch (err) {
-    console.error('Unable to fetch specific strategy!');
+    console.error('🦑 Unable to fetch specific strategy!');
     next(err);
   }
 });
