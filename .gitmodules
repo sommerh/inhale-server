@@ -1,0 +1,3 @@
+[submodule "inhale"]
+	path = inhale
+	url = https://github.com/sommerh/inhale
